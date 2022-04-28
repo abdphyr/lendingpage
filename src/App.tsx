@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from 'react';
+import './main.scss';
+import About from './components/About';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Production from './components/Products';
+import Blog from './components/Blog';
+import imageTree from './images/imageTree.png';
 
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+      <div className="app">
+        <div className="tree">
+          <div className="imageTree">
+            <img src={imageTree} alt="imageTree" />
+          </div>
+          <Production />
+          <About />
+        </div>
+        <Blog />
+        <Contact />
+      </div>
+      <Footer />
+    </>
   );
 }
 

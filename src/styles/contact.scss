@@ -1,0 +1,120 @@
+.contact_section{
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    width: 540px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    .kvadrat{
+        position: absolute;
+        width: 183px;
+        height: 183px;
+        top: 170px;
+        left: -170px;
+        transform: rotate(45deg);
+        background: #60B45A;
+    }
+    .circle{
+        position: absolute;
+        bottom: 70px;
+        right: -160px;
+        width: 206px;
+        height: 206px;
+        border-radius: 50%;
+        background: #FED372;
+    }
+    .contact_image{
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        img{
+            height: 200px;
+        }
+    }
+    .contact_body{
+        padding: 40px;
+        .title{
+            margin-bottom: 22px;
+            font-weight: 800;
+            font-size: 29px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        .desc{
+            margin-bottom: 22px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #000000;
+        }
+        .form_name_phone{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            input{
+                width: 218px;
+                height: 60px;
+                background: #F8F8F8;
+                border: 1px solid #E7E7E7;
+                box-sizing: border-box;
+                border-radius: 6px;
+                padding-left: 24px;
+                &:focus{
+                    border: 1px solid #E7E7E7;
+                    outline: none;
+                }
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 60px;
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+        }
+        textarea{
+            padding: 24px;
+            margin-bottom: 42px;
+            width: 460px;
+            height: 140px;
+            background: #F8F8F8;
+            border: 1px solid #E7E7E7;
+            box-sizing: border-box;
+            border-radius: 6px;
+            &::placeholder{
+                font-weight: 400;
+                font-size: 15px;
+                font-family: 'Raleway', sans-serif;
+                color: #000000;
+            }
+            &:focus{
+                border: 1px solid #E7E7E7;
+                outline: none;
+            }
+        }
+        button{
+            font-family: 'Raleway', sans-serif;
+            border:none;
+            width: 460px;
+            height: 52px;
+            background: #037B35;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 60px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
